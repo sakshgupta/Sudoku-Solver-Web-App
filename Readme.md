@@ -10,6 +10,9 @@
 
 This Web App Automatically Generates Sudoku Puzzle Based on Various Difficulty Level and Also Informs the Time Taken to Solve Them
 
+### For Live Example:
+[Sudoku-Solver-Web-App](https://saksham20bce10288.github.io/Sudoku-Solver-Web-App/)
+
 ### How to run
 
 <!-- - Install python and pip
