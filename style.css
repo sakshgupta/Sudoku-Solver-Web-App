@@ -1,0 +1,267 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  /* background-color: #2F303B; */
+  /* background-image: linear-gradient(#2F303B, #5D5E6A); */
+  background-image: radial-gradient(100% 100% at 51.41% 45.62%, #2F303B 0%, #000 100%);
+  /* background-image: url(image/math-background.jpg); */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.navbar{
+  font-family: 'Poppins';
+  color: #3C6C88;
+  font-size: 42px;
+  text-align: center;
+}
+
+/* FOR 4 TYPES OF DIFFICULTY BUTTONS */
+.button-wrappper-1 {
+  font-family: 'Arvo', serif;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.button-wrappper-3 {
+  font-family: 'Arvo', serif;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+/* FOR BUTTON HOVER EFFECT */
+.button_slide {
+  --c: #3C6C88;
+  color: var(--c);
+  font-size: 18px;
+  border: 0.15em solid var(--c);
+  border-radius: 0.5em;
+  top: 5rem;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Poppins';
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.button_slide span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.button_slide:hover {
+  color: black;
+}
+
+.button_slide:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.button_slide span:nth-child(1) {
+  --n: 1;
+}
+
+.button_slide span:nth-child(2) {
+  --n: 2;
+}
+
+.button_slide span:nth-child(3) {
+  --n: 3;
+}
+
+.button_slide span:nth-child(4) {
+  --n: 4;
+}
+
+#generate-blank{
+  top: 2rem;
+  margin: -1rem;
+  margin-left: 2.5rem;
+}
+
+.btn{
+  --c: white;
+  color: var(--c);
+  background-color: #3C6C88;
+  font-size: 16px;
+  justify-content: center;
+  border-radius: 36px;
+  width: 14em;
+  height: 3.5em;
+  font-weight: bold;
+  font-family: 'Poppins';
+  cursor: pointer;
+}
+
+.btn:hover{
+  transition: all 150ms linear;
+  opacity: .80;
+}
+/* BUTTON PART OVER */
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
+#textInput{
+  color: white;
+}
+/* For the Range */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    -webkit-appearance: none;
+    background-color: #757687;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #3C6C88;
+    margin-top: -1px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #1EB3C0;
+    box-shadow: -80px 0 0 80px #3C6C88;
+  }
+}
+
+/* FOR SUDOKU BOX FORMATTING */
+#container {
+  height: auto;
+  width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  margin: 0 auto;
+}
+
+#generate-sudoku {
+  margin: auto;
+  display: block;
+}
+
+#solve1, #solve2 {
+  margin: auto;
+  display: block;
+}
+
+#container div {
+  background-color: #2F303B;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 30px;
+  color: #E48476;
+}
+
+#container div:hover {
+  background-color: #3C6C88;
+}
+
+.lsb {
+  border-left: black 2px solid;
+}
+
+.bsb {
+  border-bottom: black 2px solid;
+}
+
+.rsb {
+  border-right: black 2px solid;
+}
+
+.tsb {
+  border-top: black 2px solid;
+}
+
+.ldb {
+  border-left: black 0.6px dashed;
+}
+
+.bdb {
+  border-bottom: black 0.6px dashed;
+}
+
+.rdb {
+  border-right: black 0.6px dashed;
+}
+
+.tdb {
+  border-top: black 0.6px dashed;
+}
+
+/* SUDOKU BOX FORMATTING ENDS */
+
+.author{
+  color: #3C6C88;
+  font-family: 'Poppins';
+  font-size: 36px;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.footer {
+  font-family: 'Poppins';
+  font-size: 22px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #3C6C88;
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a{
+  color: #3C6C88;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #AEC6CF;
+  text-decoration: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
