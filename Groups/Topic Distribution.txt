@@ -1,0 +1,14 @@
+Yuvansh:
+Introduction
+
+Saksham:
+Overall Architecture diagram and flow diagram
+Complete Module split-up and Explanation
+
+Shikhar:
+
+Anurag:
+Objective / Problem statement
+
+Akshat:
+Implementation
