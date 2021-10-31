@@ -7,8 +7,8 @@ body {
   margin: 0;
   background-image: radial-gradient(100% 100% at 51.41% 45.62%, #2F303B 0%, #000 100%);
   -webkit-transform: scale(0.80);
-  /* -moz-transform: scale(0.67);
-  transform: scale(0.67); */
+  -moz-transform: scale(0.80);
+  transform: scale(0.80);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
