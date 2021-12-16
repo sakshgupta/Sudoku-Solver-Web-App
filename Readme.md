@@ -1,24 +1,40 @@
 <div align="center">
   <br>
-  <img alt="SUDOKU SOLVER" src="https://i.ibb.co/pvxKJcC/SUDOKU-LOGO.png" width="300px">
+  <img src="assets\thumbnail.png" width="256" height="256">
   <h1>🧩 Sudoku Generator and Solver 🧩</h1>
   <strong>Lets Make Sudoku Solving Easy</strong>
+  <br></br>
+  <a href="https://www.python.org/">
+    	<img src="https://img.shields.io/badge/python-v3.8-informational">
+  </a>
+  <br></br>
+  <p align="center">
+	<img src="http://ForTheBadge.com/images/badges/made-with-python.svg">
+  </p>
   <br></br>
 </div>
 
 # Sudoku Solver Web App
 
-This Web App Automatically Generates Sudoku Puzzle Based on Various Difficulty Level and Also Informs the Time Taken to Solve Them
+This Web App Automatically Generates Sudoku Puzzle Based on Various Difficulty Level, also Solves and Informs the Time Taken to Solve Them
 
-### For Live Example:
+### 🤔 For Live Example:
+This will only generate Sudoku. You will have to run api.py file to solve the sudoku.
+
 [Sudoku-Solver-Web-App](https://saksham20bce10288.github.io/Sudoku-Solver-Web-App/)
 
-### How to run
+### 🚴‍♂️ How to run
 
-<!-- - Install python and pip
+- Install python and pip
 - Run pip install -r requirements.txt
-- Run python api.py -->
+- Run python api.py
 - Open index.html 
+
+### 📐 Requirements:
+In order to run the Script, the require **Flask and Flask_Cors** and you can install the requirements using:
+```
+pip install -r requirements.txt
+```
 
 ### 🍀 Four Levels 
 
@@ -43,7 +59,7 @@ This Web App Automatically Generates Sudoku Puzzle Based on Various Difficulty L
 - After Clicking the Desired Level of Sudoku Puzzle, Wait for 1-2 Seconds for Sudoku Puzzle to Load
 
 <p align="center">
-  <img src="assets/Puzzle_Loaded.png" width="700" alt="Sudoku Puzzle Loaded Image">
+  <img src="assets/Puzzle_Loaded.png" width="700" alt="Sudoku Puzzle Loaded assets">
 </p>
 
 - You can also Generate the Sudoku, with Required Number of Spaces using Slider to Generate Given on Right Side. For Eg. Take Spaces as '11'
@@ -52,36 +68,48 @@ This Web App Automatically Generates Sudoku Puzzle Based on Various Difficulty L
   <img src="assets/Generate.png" alt="Generate Button">
 </p>
 
-### 🚧 Still under Construction
-
-- The Code for Buttons and to solve the Sudoku is still in production.
-
-<!-- <p align="center">
-  <img src="image/PUZZLE_LOADED_WITH_8_SPACES.jpg" width="700" alt="Sudoku Puzzle Loaded Image 8 Spaces">
+<p align="center">
+  <img src="assets/With_11_Spaces.png" width="700" alt="Sudoku Puzzle Loaded with 11 Spaces">
 </p>
 
 ### 🤔 Solve the Sudoku Puzzle
 
-> Click on **Solve the Sudoku** Button
+- Click on **Solve the Sudoku** Button
 
->- Solved Using BackTracking Algorithm
+- Solved Using BackTracking Algorithm
 
 <p align="center">
-  <img src="image/SOLVED_USING_BACKTRACKING.png" width="700" alt="Backtracking Solved">
+  <img src="assets/Solved_with_Backtracking.png" width="500" height="525" alt="Backtracking Solved">
 </p>
 
->- Solved Using Crook's Algorithm
+- Solved Using Crook's Algorithm
 
 <p align="center">
-  <img src="image/SOLVED_USING_CROOK.png" width="700" alt="Crooks Solved">
+  <img src="assets/Solved_with_Crook.png" width="500" height="525" alt="Crooks Solved">
 </p>
 
 - Final Solved View of Web App
 
 <p align="center">
-  <img src="image/FINAL_SOLVED_VIEW.jpg" width="700" alt="Final Solved Puzzle">
+  <img src="assets/Final_Solved_View.png" width="700" alt="Final Solved Puzzle">
 </p>
 
-## 🤝 Contributing
+### 👨‍💻 Execution:
+-	Clone this repository using
+```
+git clone https://github.com/Saksham20BCE10288/Sudoku-Solver-Web-App.git
+```
+**OR**
+<br></br>
+Zip Download the Repository and Extract it's contents.
+-	Now run the [API](https://github.com/Saksham20BCE10288/Sudoku-Solver-Web-App/blob/master/api.py) file directly in your Terminal using
+```
+python api.py
+```
+**OR**
+```
+python3 api.py
+```
 
-We encourage you to contribute to Sudoku Solver for Further Improvement! Please check out the [Contributing guide](/CONTRIBUTING.md) for guidelines about how to proceed. -->
+<br></br>
+<p align='center'><b>Made with ❤ by Saksham Gupta</b></p>

@@ -35,7 +35,7 @@ function setColor(temp) {
     for (var j = 0; j < 9; j++) {
       if (temp[i][j] == true) {
         // arr[i][j].style.color = "#DC3545";
-        arr[i][j].style.color = "#1EB3C0";
+        arr[i][j].style.color = "#00ebff";
       }
     }
   }
@@ -45,7 +45,7 @@ function setColor(temp) {
 function resetColor() {
   for (var i = 0; i < 9; i++) {
     for (var j = 0; j < 9; j++) {
-      arr[i][j].style.color = "#6DFACD";
+      arr[i][j].style.color = "#4b8271";
     }
   }
 }
@@ -78,12 +78,11 @@ function changeBoard(board) {
 }
 
 // On Click of Easy Sudoku
-
 easybutton.onclick = function () {
   var xhrRequest = new XMLHttpRequest();
   xhrRequest.onload = function () {
     var response = JSON.parse(xhrRequest.response);
-    // console.log(response)
+    console.log(response)
     initializeTemp(temp);
     resetColor();
     board = response.board;
@@ -100,7 +99,7 @@ mediumbutton.onclick = function () {
   var xhrRequest = new XMLHttpRequest();
   xhrRequest.onload = function () {
     var response = JSON.parse(xhrRequest.response);
-    // console.log(response)
+    console.log(response)
     initializeTemp(temp);
     resetColor();
     board = response.board;
@@ -120,7 +119,7 @@ hardbutton.onclick = function () {
   var xhrRequest = new XMLHttpRequest();
   xhrRequest.onload = function () {
     var response = JSON.parse(xhrRequest.response);
-    // console.log(response)
+    console.log(response)
     initializeTemp(temp);
     resetColor();
     board = response.board;
@@ -137,7 +136,7 @@ randombutton.onclick = function () {
   var xhrRequest = new XMLHttpRequest();
   xhrRequest.onload = function () {
     var response = JSON.parse(xhrRequest.response);
-    // console.log(response)
+    console.log(response)
     initializeTemp(temp);
     resetColor();
     board = response.board;
@@ -275,6 +274,6 @@ solve2.onclick = async () => {
   changeBoard(content["board"]);
   time.innerHTML = content["time"] + " ns";
   if (!content["success"]) {
-    alert("Crooks's cannot solve this sudoku completely");
+    alert("Crooks's cannot solve this sudoku completely 😔");
   }
 };
