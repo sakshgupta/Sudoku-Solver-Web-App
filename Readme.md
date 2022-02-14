@@ -21,7 +21,7 @@ This Web App Automatically Generates Sudoku Puzzle Based on Various Difficulty L
 ### 🤔 For Live Example:
 This will only generate Sudoku. You will have to run api.py file to solve the sudoku.
 
-[Sudoku-Solver-Web-App](https://saksham20bce10288.github.io/Sudoku-Solver-Web-App/)
+[Sudoku-Solver-Web-App](https://sakshgupta.github.io/Sudoku-Solver-Web-App/)
 
 ### 🚴‍♂️ How to run
 
